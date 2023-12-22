@@ -1,47 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 /* NavBar.css */
 .navbar {
+ 
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #f50909;
   color: white;
   padding: 10px;
+  z-index: 1000; /* Asegura que la navbar esté por encima de otros elementos */
+
 }
+
 
 .logo {
-  font-size: 1.5rem;
+  width: 100px;
+  height: auto;
+  border-radius: 50%; /* Hace que la imagen sea redonda */
+  overflow: hidden; /* Asegura que la imagen se recorte correctamente */
+  display: block;
+
 }
 
+.company-name {
+  flex: 1; /* El nombre de la empresa ocupará el espacio restante */
+  margin-left: 10px;
+  font-size: 16px; /* Ajusta el tamaño del texto según tus necesidades */
+  font-family: 'Arial', sans-serif; /* Utiliza la misma fuente que en el nombre de la empresa */
+
+}
 .menu-items {
   display: flex;
-  gap: 10px;
+}
+.menu-button ,.whatsapp-button {
+  background-color: #f50909; /* Ajusta el color del botón según tus preferencias */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px; /* Espaciado entre los elementos */
+
 }
 
-/* LocationBox.css */
-.location-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.location-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.location-icon {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.edit-save-buttons {
-  margin-top: 20px;
-}
-
-/* Map.css */
-.leaflet-map {
-  height: 400px;
-  margin-top: 20px;
+.whatsapp-icon {
+  width: 30px; /* Ajusta el tamaño del icono según tus necesidades */
+  height: auto;
 }
