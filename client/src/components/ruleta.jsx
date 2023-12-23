@@ -1,10 +1,11 @@
-import {BrowserRouter,Routes,Route} from "react-router-dom";
-import {registroUsuario} from "./pages/registroUsuario";
-import Navbar from './components/NavBar';
-import BottomBar from './components/BottomBar';
-import Ruleta from './components/ruleta'; // Importa el componente Ruleta
+// Ruleta.jsx
+
+import god1Image from '../assets/images/god1.jpg'; // Ajusta la ruta según tu estructura de carpetas
+import god2Image from '../assets/images/god2.jpg'; // Ajusta la ruta según tu estructura de carpetas
+import god3Image from '../assets/images/god3.jpg'; // Ajusta la ruta según tu estructura de carpetas
 
 
+import '../Ruleta.css';
 
 import React, {useState} from "https://esm.sh/react@18";
 import ReactDOM from "https://esm.sh/react-dom@18";
@@ -45,24 +46,5 @@ const Carousel = ({children}) => {
     </div>
   );
 };
-
-
-function App() {
-  return (
     
-    <div>
-    <Navbar />
-    
-
-    <BottomBar />
-  </div>
-    
-  );
-}
-  
-
-export default App; 
-
-
-
-
+    export default Ruleta;

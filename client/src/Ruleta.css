@@ -1,0 +1,25 @@
+
+ /* Ruleta.css */
+
+.ruleta-container {
+    overflow: hidden;
+  }
+  
+  .ruleta-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .ruleta-imagen {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    opacity: 0.6;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .ruleta-imagen.center {
+    opacity: 1;
+  }
+  
