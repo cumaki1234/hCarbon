@@ -47,4 +47,4 @@ const Carousel = ({children}) => {
   );
 };
     
-    export default Ruleta;
+    export default Carousel;
